@@ -2,7 +2,7 @@
 
 a Python-based eBay listing scraper for Windows + Linux
 
-(can you tell this is fun for me yet?)
+made from Template-pedia
 
 ## Installation
 
