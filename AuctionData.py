@@ -28,6 +28,7 @@ class AuctionData:
         with open(name, 'w', newline='', encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(["Name", "Condition", "Price", "Link"])
+
             for i in range(len(self.names)):
                 writer.writerow([self.names[i], self.conditions[i], self.prices[i], self.links[i]])
         
