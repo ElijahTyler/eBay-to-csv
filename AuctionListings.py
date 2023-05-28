@@ -4,12 +4,10 @@ import re
 class AuctionListings:
     def __init__(self, obj = None) -> None:
         if not obj:
-            # declare as many attributes as necessary
             self.name = None
             self.condition = None
             self.price = None
         else:
-            # extract_nums : useful for parsing money, year, etc.
             def extract_nums(string): # returns -1 if no numbers found
                 temp = re.sub("[^.0-9]", "", string)
                 if temp:
@@ -32,7 +30,7 @@ class AuctionListings:
             else:
                 self.price = extract_nums(self.price[0])
 
-            # link TODO: fix this when it isn't 12:50 AM
+            # link
             self.link = soup.find('a')['href']
 
     def __str__(self) -> str:
