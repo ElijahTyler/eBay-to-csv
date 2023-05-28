@@ -33,7 +33,7 @@ class AuctionListings:
                 self.price = extract_nums(self.price[0])
 
             # link TODO: fix this when it isn't 12:50 AM
-            self.link = soup.find("a", attrs={"class": "s-item__link"}).href
+            self.link = soup.find('a')['href']
 
     def __str__(self) -> str:
         return f'Name: {self.name}\nCondition: {self.condition}\nPrice: {self.price}\nLink: {self.link}'

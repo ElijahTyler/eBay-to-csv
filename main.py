@@ -84,7 +84,7 @@ def main(url_list, search_term):
     obj.generate_csv(search_term.title() + " Data.csv")
 
     # delete .json file
-    # os.remove("listings.json")
+    os.remove("listings.json")
 
     # time taken to 2 decimal points
     total_time = round(time.time() - start_time, 2)
