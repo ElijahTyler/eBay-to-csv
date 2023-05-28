@@ -2,3 +2,4 @@ listings.json
 *.csv
 venv/
 __pycache__/
+.idea/
