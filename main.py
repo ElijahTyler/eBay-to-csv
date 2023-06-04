@@ -92,6 +92,8 @@ def main(url_list, search_term):
 
 if __name__ == "__main__":
     search_term = input("Enter search term: ")
-    url1 = f"https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw={search_term}&_sacat=0&_ipg=240"
+    # sort_by_price = ["", "&_sop=15"][input("Sort by price? (y/n): ").lower() == "y"]
+    sort_by_price = ""
+    url1 = f"https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw={search_term}&_sacat=0&_ipg=240{sort_by_price}"
     urls = [url1]
     main(urls, search_term)
