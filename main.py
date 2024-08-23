@@ -32,7 +32,7 @@ def init_firefox(headless=False):
     opts.add_argument("--ignore-certificate-errors")
     opts.add_argument("--start-maximized")
 
-    driver = webdriver.Firefox(options = opts, executable_path = driver_executable, service_log_path = dev_null)
+    driver = webdriver.Firefox(options = opts, )
     return driver
 
 def main(url_list, search_term):
